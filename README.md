@@ -2,18 +2,42 @@
 
 A minimal C and Arduino codebase covering hardware control, stream processing, recursive algorithms, and automated test logic.
 
+---
+
 ## Project Index & File Layout
 
+```text
+.
 ├── q1_water_quality.c      # Sensor processing & status classifier
 ├── q2_mobile_money.c       # Transaction control-flow state machine
 ├── q3_distance_analysis.c  # Array analytics & recursive processing
 └── smart_parking_system/   # Embedded Tinkercad smart parking system
     └── smart_parking_system.ino
 
-## 1. Water Quality Sensor Monitor
-- **Purpose:** Calculates Water Quality Index (WQI) using:$$\text{Index} = 100 - (\vert{}T - 25\vert{} + \frac{\text{Turbidity}}{2})$$
-- Classification: Good ($\ge 80$), Warning ($60\text{--}79$), Critical ($< 60$).Real-World Application: Microcontroller ECUs in industrial water treatment.
-- Compilation Pipeline: Preprocessing (.i) $\rightarrow$ Compilation (.s) $\rightarrow$ Assembly (.o) $\rightarrow$ Linking (.exe).
+
+## 2. Water Quality Sensor Monitor
+**Purpose:** Calculates Water Quality Index (WQI) using:
+Index = 100 - (|Temperature - 25| + (Turbidity / 2))
+
+**Classification:**
+
+- Good: Index >= 80
+
+- Warning: 60 <= Index < 80
+
+- Critical: Index < 60
+
+**Real-World Application:** Embedded microcontrollers and Engine Control Units (ECUs) in industrial water treatment and environmental monitoring systems.
+
+### Compilation Pipeline:
+
+- Preprocessing (.c -> .i): Expands headers and macros.
+
+- Compilation (.i -> .s): Translates C code to Assembly.
+
+- Assembly (.s -> .o): Converts Assembly to object machine code.
+
+- Linking (.o -> .exe / .out): Links library binaries to create the executable.
 
 ## 2. Mobile Money Processing System
 
