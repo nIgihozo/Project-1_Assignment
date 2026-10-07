@@ -20,9 +20,9 @@ int main(void)
     printf("Average distance per route: %.2f km\n", average_distance(routes, n));
     printf("Longest route: %d km\n", longest_route(routes, n));
     printf("Number of routes above limit: %d\n", count_above_limit(routes, n, limit));
+     printf("Routes above 20km: %d\n", count_above_limit(routes, n, 20));
     printf("Recursive sum: %d\n", recursive_sum(routes, n));
-    printf("Routes above 20km: %d\n", count_above_limit(routes, n, 20));
-
+   
     return(0);
 }
 
