@@ -13,7 +13,8 @@ A minimal C and Arduino codebase covering hardware control, stream processing, r
 ├── q3_distance_analysis.c  # Array analytics & recursive processing
 └── smart_parking_system/   # Embedded Tinkercad smart parking system
     └── smart_parking_system.ino
-
+```
+---
 
 ## 2. Water Quality Sensor Monitor
 **Purpose:** Calculates Water Quality Index (WQI) using:
@@ -39,6 +40,7 @@ Index = 100 - (|Temperature - 25| + (Turbidity / 2))
 
 - Linking (.o -> .exe / .out): Links library binaries to create the executable.
 
+---
 ## 2. Mobile Money Processing System
 
 **Purpose:** CLI state machine handling deposits, balance validation, and withdrawals.
@@ -51,6 +53,7 @@ Index = 100 - (|Temperature - 25| + (Turbidity / 2))
 
 - *continue* rejects negative inputs and overdraft attempts safely without resetting session state.
 
+---
 ## 3. Delivery Route Analytics
 
 **Purpose:** Performs route data analytics using procedural and recursive functions.
@@ -60,6 +63,8 @@ Index = 100 - (|Temperature - 25| + (Turbidity / 2))
 - recursive_sum(): Base case ($n \le 0$), decrementing step ($n - 1$).
 - Trade-off: Recursion offers clean mathematical code but risks stack overflow on large arrays.
 
+
+---
 ## 4. Arduino Smart Parking System
 
 **Data Flow:** HC-SR04 Sensor → Arduino Uno → LED Indicators + Piezo Alarm
